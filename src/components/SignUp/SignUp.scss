@@ -7,15 +7,18 @@ $fontWeight: 400;
 $fontSizeMain: 16px;
 $fontSizeTitle: 20px;
 $fontSizeInput: 14px;
+$fontSizeError: 10px;
 
 $lineHeightMain: 21.79px;
 $lineHeightTitle: 23.44px;
 $lineHeightInput: 16.41px;
+$lineHeightError: 11.72px;
 
 $textColorMain: #151317;
 $textColorInput: #808185;
 $colorInput: #f8f8f8;
 $colorButton: #512689;
+$errorTextColor: #ff6161;
 $textColorButton: white;
 
 .registration {
@@ -65,6 +68,22 @@ $textColorButton: white;
                     position: absolute;
                     margin-top: 12px;
                 }
+                &__errorTextNone {
+                    display: none;
+                }
+                &__errorTextBlock {
+                    margin-top: 20px;
+                    display: block;
+                    color: $errorTextColor;
+                    font-size: $fontSizeError;
+                    line-height: $lineHeightError;
+                }
+            }
+            &__inputFalls {
+                height: 48px;
+                border-radius: 8px;
+                background-color: $colorInput;
+                border: 1px solid red;
             }
         }
     }

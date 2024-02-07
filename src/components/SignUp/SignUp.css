@@ -50,6 +50,22 @@
   position: absolute;
   margin-top: 12px;
 }
+.registration__dataEntry__block__input__errorTextNone {
+  display: none;
+}
+.registration__dataEntry__block__input__errorTextBlock {
+  margin-top: 20px;
+  display: block;
+  color: #ff6161;
+  font-size: 10px;
+  line-height: 11.72px;
+}
+.registration__dataEntry__block__inputFalls {
+  height: 48px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  border: 1px solid red;
+}
 .registration__button {
   display: flex;
   height: 48px;
