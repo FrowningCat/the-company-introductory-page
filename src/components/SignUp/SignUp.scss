@@ -15,8 +15,8 @@ $lineHeightInput: 16.41px;
 $textColorMain: #151317;
 $textColorInput: #808185;
 $colorInput: #f8f8f8;
-$textColorButton: #512689;
-$textColorButtonText: white;
+$colorButton: #512689;
+$textColorButton: white;
 
 .registration {
     display: grid;
@@ -26,7 +26,8 @@ $textColorButtonText: white;
     margin-left: 470px;
     border-radius: 16px;
     gap: 24px;
-    padding: 16px;
+    padding-left: 32px;
+    padding-top: 16px;
     box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 8%);
     font-family: $mainFontFamily;
     font-size: $fontSizeMain;
@@ -54,7 +55,16 @@ $textColorButtonText: white;
                 height: 48px;
                 border-radius: 8px;
                 background-color: $colorInput;
-                padding: 12px 8px 12px 16px;
+                &__text {
+                    width: 400px;
+                    padding: 12px 8px 0 16px;
+                    color: $textColorInput;
+                }
+                &__eye {
+                    cursor: pointer;
+                    position: absolute;
+                    margin-top: 12px;
+                }
             }
         }
     }
@@ -64,13 +74,20 @@ $textColorButtonText: white;
         width: 468px;
         gap: 16px;
         border-radius: 8px;
-        background: $textColorButton;
+        background: $colorButton;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        transition: background-color 1s;
         &__text {
+            cursor: pointer;
             height: 22px;
             width: 156px;
-            color: $textColorButtonText;
+            color: $textColorButton;
         }
+    }
+    &__button:hover {
+        background: #623b94;
+        box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 8%);
     }
 }
