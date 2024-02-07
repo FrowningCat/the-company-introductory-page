@@ -101,10 +101,6 @@
   .registration__dataEntry__block__input {
     width: 300px;
   }
-  .registration__dataEntry__block__eye {
-    cursor: pointer;
-    position: relative;
-  }
   .registration__button {
     width: 343px;
     height: 48px;
