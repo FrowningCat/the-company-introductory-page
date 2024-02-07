@@ -18,6 +18,7 @@ $textColorMain: #151317;
 $textColorInput: #808185;
 $colorInput: #f8f8f8;
 $colorButton: #512689;
+$colorButtonActive: #623b94;
 $errorTextColor: #ff6161;
 $textColorButton: white;
 
@@ -106,7 +107,31 @@ $textColorButton: white;
         }
     }
     &__button:hover {
-        background: #623b94;
+        background: $colorButtonActive;
         box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 8%);
+    }
+}
+
+@media (max-width: 375px) {
+    .registration {
+        width: 375px;
+        margin-top: 64px;
+        &__dataEntry {
+            height: 415px;
+            width: 343px;
+            &__block {
+                &__input {
+                    width: 300px;
+                }
+                &__eye {
+                    cursor: pointer;
+                    position: relative;
+                }
+            }
+        }
+        &__button {
+            width: 343px;
+            height: 48px;
+        }
     }
 }

@@ -87,4 +87,26 @@
 .registration__button:hover {
   background: #623b94;
   box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 375px) {
+  .registration {
+    width: 375px;
+    margin-top: 64px;
+  }
+  .registration__dataEntry {
+    height: 415px;
+    width: 343px;
+  }
+  .registration__dataEntry__block__input {
+    width: 300px;
+  }
+  .registration__dataEntry__block__eye {
+    cursor: pointer;
+    position: relative;
+  }
+  .registration__button {
+    width: 343px;
+    height: 48px;
+  }
 }/*# sourceMappingURL=SignUp.css.map */
