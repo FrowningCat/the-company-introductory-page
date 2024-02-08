@@ -1,0 +1,68 @@
+.parthersCard {
+  font-size: 16px;
+  line-height: 21.79px;
+}
+.parthersCard__header {
+  width: 1440px;
+  height: 265px;
+  background: #512689;
+  display: flex;
+  box-shadow: 0px 0.9960451126px 3.9841804504px 0px #333333;
+}
+.parthersCard__header__return {
+  cursor: pointer;
+  margin-top: 32px;
+  margin-left: 80px;
+  display: flex;
+  gap: 8px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #f8f8f8;
+  width: 79px;
+  position: absolute;
+}
+.parthersCard__header__exit {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 1279px;
+  margin-top: 32px;
+  display: flex;
+  gap: 8px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #f8f8f8;
+  width: 81px;
+}
+.parthersCard__header__buttonText {
+  cursor: pointer;
+  color: #f8f8f8;
+  margin: 8px 16px;
+}
+.parthersCard__header__userCard {
+  display: flex;
+  color: #ffffff;
+  margin-top: 39px;
+  margin-left: 188px;
+}
+.parthersCard__header__userCard__foto {
+  height: 187px;
+  width: 187px;
+  border-radius: 100px;
+  background-color: #000;
+  position: absolute;
+}
+.parthersCard__header__userCard__text {
+  margin-top: 29px;
+  margin-left: 219px;
+  display: grid;
+  gap: 16px;
+  height: 129px;
+}
+.parthersCard__header__userCard__text__name {
+  font-size: 64px;
+  line-height: 75px;
+}
+.parthersCard__header__userCard__text__type {
+  font-size: 32px;
+  line-height: 37.5px;
+}/*# sourceMappingURL=ParthersCard.css.map */

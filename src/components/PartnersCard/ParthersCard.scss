@@ -1,0 +1,81 @@
+$fontSizeMain: 16px;
+$fontSizeUserCardName: 64px;
+$fontSizeUserCardType: 32px;
+
+$lineHeightMain: 21.79px;
+$lineHeightUserCardName: 75px;
+$lineHeightUserCardType: 37.5px;
+
+$headerColor: #512689;
+$borderRadius: #f8f8f8;
+$buttonHeaderText: #f8f8f8;
+$hederText: #ffffff;
+
+.parthersCard {
+    font-size: $fontSizeMain;
+    line-height: $lineHeightMain;
+    &__header {
+        width: 1440px;
+        height: 265px;
+        background: $headerColor;
+        display: flex;
+        box-shadow: 0px 0.9960451126098633px 3.984180450439453px 0px #333333;
+        &__return {
+            cursor: pointer;
+            margin-top: 32px;
+            margin-left: 80px;
+            display: flex;
+            gap: 8px;
+            height: 38px;
+            border-radius: 8px;
+            border: 1px solid $borderRadius;
+            width: 79px;
+            position: absolute;
+        }
+        &__exit {
+            cursor: pointer;
+            position: absolute;
+            margin-left: 1279px;
+            margin-top: 32px;
+            display: flex;
+            gap: 8px;
+            height: 38px;
+            border-radius: 8px;
+            border: 1px solid $borderRadius;
+            width: 81px;
+        }
+        &__buttonText {
+            cursor: pointer;
+            color: $buttonHeaderText;
+            margin: 8px 16px;
+        }
+        &__userCard {
+            display: flex;
+            color: $hederText;
+            margin-top: 39px;
+            margin-left: 188px;
+            &__foto {
+                height: 187px;
+                width: 187px;
+                border-radius: 100px;
+                background-color: #000;
+                position: absolute;
+            }
+            &__text {
+                margin-top: 29px;
+                margin-left: 219px;
+                display: grid;
+                gap: 16px;
+                height: 129px;
+                &__name {
+                    font-size: $fontSizeUserCardName;
+                    line-height: $lineHeightUserCardName;
+                }
+                &__type {
+                    font-size: $fontSizeUserCardType;
+                    line-height: $lineHeightUserCardType;
+                }
+            }
+        }
+    }
+}
