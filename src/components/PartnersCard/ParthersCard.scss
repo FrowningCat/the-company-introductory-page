@@ -10,6 +10,7 @@ $headerColor: #512689;
 $borderRadius: #f8f8f8;
 $buttonHeaderText: #f8f8f8;
 $hederText: #ffffff;
+$infoText: #151317;
 
 .parthersCard {
     font-size: $fontSizeMain;
@@ -75,6 +76,26 @@ $hederText: #ffffff;
                     font-size: $fontSizeUserCardType;
                     line-height: $lineHeightUserCardType;
                 }
+            }
+        }
+    }
+    &__main {
+        &__textInfo {
+            position: absolute;
+            margin-top: 49px;
+            margin-left: 188px;
+            width: 630px;
+            color: $infoText;
+        }
+        &__textContact {
+            position: absolute;
+            display: grid;
+            gap: 24px;
+            margin-top: 50px;
+            margin-left: 947px;
+            &__block {
+                display: flex;
+                gap: 8px;
             }
         }
     }

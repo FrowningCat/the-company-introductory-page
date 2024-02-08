@@ -65,4 +65,22 @@
 .parthersCard__header__userCard__text__type {
   font-size: 32px;
   line-height: 37.5px;
+}
+.parthersCard__main__textInfo {
+  position: absolute;
+  margin-top: 49px;
+  margin-left: 188px;
+  width: 630px;
+  color: #151317;
+}
+.parthersCard__main__textContact {
+  position: absolute;
+  display: grid;
+  gap: 24px;
+  margin-top: 50px;
+  margin-left: 947px;
+}
+.parthersCard__main__textContact__block {
+  display: flex;
+  gap: 8px;
 }/*# sourceMappingURL=ParthersCard.css.map */
