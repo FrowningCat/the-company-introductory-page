@@ -1,9 +1,20 @@
 import './ParthersCard.css';
+import { userOne } from './data';
 
 import mail from '../../assets/mail.png';
 import telephone from '../../assets/telephone.png';
 
 export default function parthersCard() {
+    function WayToTeach({ description }) {
+        return (
+            <>
+                <text>{description}</text>
+                <br />
+                <br />
+            </>
+        );
+    }
+
     return (
         <div className="parthersCard">
             <header className="parthersCard__header">
@@ -31,28 +42,9 @@ export default function parthersCard() {
             </header>
             <main className="parthersCard__main">
                 <div className="parthersCard__main__textInfo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                    officiis tempore nemo explicabo, deleniti cum, labore
-                    temporibus natus tenetur reprehenderit, ipsum alias. Optio
-                    obcaecati itaque dolorem vitae laborum nulla doloribus
-                    possimus repellendus, placeat distinctio, deleniti odio
-                    beatae id odit rerum?
-                    <br />
-                    <br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                    officiis tempore nemo explicabo, deleniti cum, labore
-                    temporibus natus tenetur reprehenderit, ipsum alias. Optio
-                    obcaecati itaque dolorem vitae laborum nulla doloribus
-                    possimus repellendus, placeat distinctio, deleniti odio
-                    beatae id odit rerum?
-                    <br />
-                    <br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                    officiis tempore nemo explicabo, deleniti cum, labore
-                    temporibus natus tenetur reprehenderit, ipsum alias. Optio
-                    obcaecati itaque dolorem vitae laborum nulla doloribus
-                    possimus repellendus, placeat distinctio, deleniti odio
-                    beatae id odit rerum?
+                    {userOne.map((way) => (
+                        <WayToTeach key={way.description} {...way} />
+                    ))}
                 </div>
                 <div className="parthersCard__main__textContact">
                     <div className="parthersCard__main__textContact__block">
