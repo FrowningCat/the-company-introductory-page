@@ -1,0 +1,63 @@
+$fontSizeMain: 20px;
+$fontSizeButton: 16px;
+$fontSizeTitle: 64px;
+
+$lineHeightMain: 23.43px;
+$lineHeightButton: 21.79px;
+$lineHeightTitle: 75px;
+
+$headerColor: #512689;
+$borderRadius: #f8f8f8;
+$headerTextColor: #f8f8f8;
+$hederTitleTextColor: #ffffff;
+$nameTextColor: #151317;
+
+.ourTeam {
+    font-size: $fontSizeMain;
+    line-height: $lineHeightMain;
+    z-index: 1;
+    &__header {
+        z-index: 1;
+        height: 265px;
+        width: 1440px;
+        background-color: $headerColor;
+        display: flex;
+        &__titleBlock {
+            width: 864px;
+            height: 137px;
+            display: grid;
+            margin-top: 64px;
+            margin-left: 297px;
+            position: absolute;
+            &__title {
+                margin-left: 199px;
+                color: $hederTitleTextColor;
+                font-size: $fontSizeTitle;
+                line-height: $lineHeightTitle;
+            }
+            &__description {
+                color: $headerTextColor;
+                text-align: center;
+            }
+        }
+        &__button {
+            cursor: pointer;
+            position: absolute;
+            margin-left: 1279px;
+            margin-top: 32px;
+            display: flex;
+            gap: 8px;
+            height: 38px;
+            border-radius: 8px;
+            border: 1px solid $borderRadius;
+            width: 81px;
+            &__text {
+                color: $headerTextColor;
+                font-size: $fontSizeButton;
+                line-height: $lineHeightButton;
+                cursor: pointer;
+                margin: 8px 16px;
+            }
+        }
+    }
+}

@@ -39,6 +39,7 @@
   margin: 8px 16px;
 }
 .parthersCard__header__userCard {
+  position: absolute;
   display: flex;
   color: #ffffff;
   margin-top: 39px;

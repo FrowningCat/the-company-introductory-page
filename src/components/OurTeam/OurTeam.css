@@ -1,0 +1,49 @@
+.ourTeam {
+  font-size: 20px;
+  line-height: 23.43px;
+  z-index: 1;
+}
+.ourTeam__header {
+  z-index: 1;
+  height: 265px;
+  width: 1440px;
+  background-color: #512689;
+  display: flex;
+}
+.ourTeam__header__titleBlock {
+  width: 864px;
+  height: 137px;
+  display: grid;
+  margin-top: 64px;
+  margin-left: 297px;
+  position: absolute;
+}
+.ourTeam__header__titleBlock__title {
+  margin-left: 199px;
+  color: #ffffff;
+  font-size: 64px;
+  line-height: 75px;
+}
+.ourTeam__header__titleBlock__description {
+  color: #f8f8f8;
+  text-align: center;
+}
+.ourTeam__header__button {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 1279px;
+  margin-top: 32px;
+  display: flex;
+  gap: 8px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #f8f8f8;
+  width: 81px;
+}
+.ourTeam__header__button__text {
+  color: #f8f8f8;
+  font-size: 16px;
+  line-height: 21.79px;
+  cursor: pointer;
+  margin: 8px 16px;
+}/*# sourceMappingURL=OurTeam.css.map */

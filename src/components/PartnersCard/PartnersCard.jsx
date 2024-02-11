@@ -3,6 +3,7 @@ import { userOne } from './data';
 
 import mail from '../../assets/mail.png';
 import telephone from '../../assets/telephone.png';
+import { Link } from 'react-router-dom';
 
 export default function parthersCard() {
     function WayToTeach({ description }) {
@@ -18,11 +19,13 @@ export default function parthersCard() {
     return (
         <div className="parthersCard">
             <header className="parthersCard__header">
-                <div className="parthersCard__header__return">
-                    <text className="parthersCard__header__buttonText">
-                        Назад
-                    </text>
-                </div>
+                <Link to={'/OurTeam'}>
+                    <div className="parthersCard__header__return">
+                        <text className="parthersCard__header__buttonText">
+                            Назад
+                        </text>
+                    </div>
+                </Link>
                 <div className="parthersCard__header__userCard">
                     <div className="parthersCard__header__userCard__foto"></div>
                     <div className="parthersCard__header__userCard__text">
@@ -34,11 +37,13 @@ export default function parthersCard() {
                         </div>
                     </div>
                 </div>
-                <div className="parthersCard__header__exit">
-                    <text className="parthersCard__header__buttonText">
-                        Выход
-                    </text>
-                </div>
+                <Link to={'/'}>
+                    <div className="parthersCard__header__exit">
+                        <text className="parthersCard__header__buttonText">
+                            Выход
+                        </text>
+                    </div>
+                </Link>
             </header>
             <main className="parthersCard__main">
                 <div className="parthersCard__main__textInfo">

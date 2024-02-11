@@ -1,5 +1,6 @@
 import './SignUp.css';
 
+import { Link } from 'react-router-dom';
 import eye from '../../assets/eye.png';
 
 export default function signUp() {
@@ -169,9 +170,11 @@ export default function signUp() {
                 className="registration__button"
                 onClick={() => registrationButton()}
             >
-                <div className="registration__button__text">
-                    Зарегестрироваться
-                </div>
+                <Link to={'/OurTeam'}>
+                    <div className="registration__button__text">
+                        Зарегестрироваться
+                    </div>
+                </Link>
             </div>
         </div>
     );

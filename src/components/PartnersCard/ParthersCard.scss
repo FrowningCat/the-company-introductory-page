@@ -51,6 +51,7 @@ $infoText: #151317;
             margin: 8px 16px;
         }
         &__userCard {
+            position: absolute;
             display: flex;
             color: $hederText;
             margin-top: 39px;
