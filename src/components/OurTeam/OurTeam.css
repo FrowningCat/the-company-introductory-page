@@ -1,7 +1,6 @@
 .ourTeam {
   font-size: 20px;
   line-height: 23.43px;
-  z-index: 1;
 }
 .ourTeam__header {
   z-index: 1;
@@ -63,7 +62,7 @@
 .ourTeam__userBlock__user__info {
   color: #151317;
   cursor: pointer;
-  box-shadow: 0px 0.9960451126px 3.9841804504px 0px rgba(51, 51, 51, 0.1490196078);
+  box-shadow: 0px 0.9960451126px 3.9841804504px 0px rgba(51, 51, 51, 0.1294117647);
   width: 305px;
   height: 263px;
   display: grid;
@@ -72,7 +71,16 @@
   box-sizing: border-box;
   padding: 36px 80px 20px 80px;
 }
-.ourTeam__userBlock__user__info__img {
+.ourTeam__userBlock__user__info__avatar {
   cursor: pointer;
   border-radius: 100px;
+}
+.ourTeam__userBlock__user__info__like {
+  display: flex;
+  justify-content: end;
+  height: 28px;
+  width: 265px;
+}
+.ourTeam__userBlock__user__info:hover {
+  box-shadow: 0px 0.9960451126px 3.9841804504px 0px #000000;
 }/*# sourceMappingURL=OurTeam.css.map */

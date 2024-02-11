@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
-import './OurTeam.css';
-
 import { Link } from 'react-router-dom';
+
+import './OurTeam.css';
+import like from '../../assets/like.png';
 
 export default function ourTeam() {
     const [users, setUsers] = useState([]);
@@ -49,12 +50,20 @@ export default function ourTeam() {
                                             className="ourTeam__userBlock__user__info"
                                             key={user.id}
                                         >
-                                            <img
-                                                className="ourTeam__userBlock__user__info__img"
-                                                key={user.avatar}
-                                                src={user.avatar}
-                                            />
-                                            <text>{user.first_name}</text>
+                                            <div>
+                                                <img
+                                                    className="ourTeam__userBlock__user__info__avatar"
+                                                    key={user.avatar}
+                                                    src={user.avatar}
+                                                />
+                                            </div>
+                                            {user.first_name}
+                                            <div className="ourTeam__userBlock__user__info__like">
+                                                <img
+                                                    src={like}
+                                                    alt="like png"
+                                                ></img>
+                                            </div>
                                         </div>
                                     </Link>
                                 </>

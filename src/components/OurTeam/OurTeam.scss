@@ -15,7 +15,6 @@ $nameTextColor: #151317;
 .ourTeam {
     font-size: $fontSizeMain;
     line-height: $lineHeightMain;
-    z-index: 1;
     &__header {
         z-index: 1;
         height: 265px;
@@ -75,7 +74,7 @@ $nameTextColor: #151317;
                 color: $nameTextColor;
                 cursor: pointer;
                 box-shadow: 0px 0.9960451126098633px 3.984180450439453px 0px
-                    #33333326;
+                    #33333321;
                 width: 305px;
                 height: 263px;
                 display: grid;
@@ -83,10 +82,20 @@ $nameTextColor: #151317;
                 justify-content: center;
                 box-sizing: border-box;
                 padding: 36px 80px 20px 80px;
-                &__img {
+                &__avatar {
                     cursor: pointer;
                     border-radius: 100px;
                 }
+                &__like {
+                    display: flex;
+                    justify-content: end;
+                    height: 28px;
+                    width: 265px;
+                }
+            }
+            &__info:hover {
+                box-shadow: 0px 0.9960451126098633px 3.984180450439453px 0px
+                    #000000;
             }
         }
     }
