@@ -170,7 +170,7 @@ export default function signUp() {
                 className="registration__button"
                 onClick={() => registrationButton()}
             >
-                <Link to={'/OurTeam'}>
+                <Link to={'/ourTeam'}>
                     <div className="registration__button__text">
                         Зарегестрироваться
                     </div>

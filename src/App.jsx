@@ -7,7 +7,7 @@ export default function App() {
     return (
         <Routes>
             <Route path="/" element={<SignUp />} />
-            <Route path="/OurTeam" element={<OurTeam />} />
+            <Route path="/ourTeam" element={<OurTeam />} />
             <Route path="/parthersCard" element={<ParthersCard />} />
         </Routes>
     );

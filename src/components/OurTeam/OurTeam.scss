@@ -60,4 +60,34 @@ $nameTextColor: #151317;
             }
         }
     }
+    &__userBlock {
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 48px;
+        margin-left: 80px;
+        width: 1280px;
+        &__user {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            &__info {
+                color: $nameTextColor;
+                cursor: pointer;
+                box-shadow: 0px 0.9960451126098633px 3.984180450439453px 0px
+                    #33333326;
+                width: 305px;
+                height: 263px;
+                display: grid;
+                gap: 16px;
+                justify-content: center;
+                box-sizing: border-box;
+                padding: 36px 80px 20px 80px;
+                &__img {
+                    cursor: pointer;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
 }
